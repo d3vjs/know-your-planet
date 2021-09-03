@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import { Header, Container, Logo, LogoLink } from "./NavbarStyles"
 import NavLg from "./NavLg/NavLg";
+import NavSm from "./NavSm/NavSm";
 
 function Navbar() {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const tabletBreakpoint = 768;
+
+    useEffect(() => {
+        window.addEventListener('resize', () =>
+            setWindowWidth(window.innerWidth)
+        );
+    }, [windowWidth]);
 
     const containerVariants = {
         hidden: {
@@ -28,7 +39,12 @@ function Navbar() {
                 <Logo>
                     <div to="/">Know Your Planet!</div>
                 </Logo>
-                <NavLg />
+                {windowWidth >= tabletBreakpoint ? (
+
+                    <NavLg />
+                ) : (
+                    <NavSm windowWidth={windowWidth} />
+                )}
             </Container>
         </Header>
     )
