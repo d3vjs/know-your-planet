@@ -13,7 +13,7 @@ function IntroContainer ({ planetData, currentData, isChanging }) {
             transition: { delay: 1.5, duration: 1.5 },
         },
         exit: {
-            opacity: 0,
+            opacity: 1,
             x: 50,
             transition: { duration: 1 },
         },

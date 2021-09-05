@@ -3,7 +3,7 @@ import { Header, Container, Logo, LogoLink } from "./NavbarStyles"
 import NavLg from "./NavLg/NavLg";
 import NavSm from "./NavSm/NavSm";
 
-function Navbar() {
+function Navbar({ pathName, activePlanet, onHover }) {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const tabletBreakpoint = 768;
@@ -41,7 +41,10 @@ function Navbar() {
                 </Logo>
                 {windowWidth >= tabletBreakpoint ? (
 
-                    <NavLg />
+                    <NavLg
+                        pathName={pathName}
+                        onHover={onHover}
+                        activePlanet={activePlanet} />
                 ) : (
                     <NavSm windowWidth={windowWidth} />
                 )}

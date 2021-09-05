@@ -80,8 +80,7 @@ export const Item = styled(motion.li)`
     border-bottom: 1px solid ${(props) => props.theme.colors.grayDark};
 `;
 
-// TODO: use NavLink -> styled(NavLink);
-export const Link = styled.div`
+export const Link = styled(NavLink)`
     display: flex;
     justify-content: space-between;
     position: relative;

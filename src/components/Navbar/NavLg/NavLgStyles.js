@@ -20,8 +20,7 @@ export const List = styled.ul`
 
 export const Item = styled.li``;
 
-// TODO use Navlink
-export const Link = styled.div`
+export const Link = styled(NavLink)`
     display: flex;
     position: relative;
     font-size: 0.6875rem;
