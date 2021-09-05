@@ -18,12 +18,9 @@ export const List = styled.ul`
     }
 `;
 
-export const Item = styled.li`
-    color: black;
-`;
+export const Item = styled.li``;
 
-// TODO: Use NavLink
-// Use Props for color
+// TODO use Navlink
 export const Link = styled.div`
     display: flex;
     position: relative;
@@ -32,7 +29,7 @@ export const Link = styled.div`
     letter-spacing: 1px;
     line-height: 25px;
     text-transform: uppercase;
-    color: black;
+    color: ${(props) => props.theme.colors.whiteAlpha75};
     cursor: pointer;
     transition: color 300ms ease;
 

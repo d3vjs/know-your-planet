@@ -19,7 +19,7 @@ export const Bars = styled.span`
     position: relative;
     width: 100%;
     height: 3px;
-    background: black;
+    background: ${(props) => props.theme.colors.white};
     transition: transform 200ms ease;
 
     &::before,
@@ -81,7 +81,6 @@ export const Item = styled(motion.li)`
 `;
 
 // TODO: use NavLink -> styled(NavLink);
-// TODO: use color from props instead of black!
 export const Link = styled.div`
     display: flex;
     justify-content: space-between;
@@ -90,7 +89,7 @@ export const Link = styled.div`
     font-weight: 600;
     letter-spacing: 1.36px;
     line-height: 25px;
-    color: black;
+    color: ${(props) => props.color};
     text-transform: uppercase;
     padding: 20px 0 20px 44px;
 

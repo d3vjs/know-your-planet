@@ -3,7 +3,8 @@ import { nightSkyBackground } from './nightSkyBackground';
 
 export const Container = styled.div`
     position: relative;
-    background-color: ${(props) => props.theme.colors.black}
+    min-height: 100vh;
+    background-color: ${(props) => props.theme.colors.black};
     overflow: hidden;
 
     &::after {
