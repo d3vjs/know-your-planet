@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import MainContainer from './MainContainer/MainContainer';
-import ThemeProvider from './ThemeProvider/ThemeProvider';
-import Navbar from './Navbar/Navbar';
+import MainContainer from './components/MainContainer/MainContainer';
+import ThemeProvider from './components/ThemeProvider/ThemeProvider';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import IcoMoon from 'react-icomoon';
-import iconSet from '../icons-data.json';
+import iconSet from '../../icons-data.json';
 
 const CustomIcon = ({ name, size, color, customStyle }) => {
     return (
