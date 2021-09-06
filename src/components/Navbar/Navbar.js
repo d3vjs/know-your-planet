@@ -37,7 +37,7 @@ function Navbar({ pathName, activePlanet, onHover }) {
         >
             <Container>
                 <Logo>
-                    <div to="/">Know Your Planet!</div>
+                <LogoLink to="/">Know Your Planet!</LogoLink>
                 </Logo>
                 {windowWidth >= tabletBreakpoint ? (
 

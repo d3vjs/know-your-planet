@@ -14,6 +14,7 @@ import Jupiter from './pages/Jupiter/Jupiter';
 import Saturn from './pages/Saturn/Saturn';
 import Uranus from './pages/Uranus/Uranus';
 import Neptune from './pages/Neptune/Neptune';
+import AllPlanets from './components/AllPlanets/AllPlanets';
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,9 @@ function App() {
             </Route>
             <Route exact path="/neptune">
               <Neptune />
+            </Route>
+            <Route exact path="/">
+              <AllPlanets activePlanet={activePlanet} />
             </Route>
           </Switch>
         </AnimatePresence>
